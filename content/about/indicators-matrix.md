@@ -2,10 +2,10 @@
 # Hero widget.
 widget = "hero"  # See https://wowchemy.com/docs/page-builder/
 headless = true  # This file represents a page section.
-active = true  # Activate this widget? true/false
-weight = 10  # Order that this section will appear.
+active = false  # Activate this widget? true/false
+weight = 47  # Order that this section will appear.
 
-title = "Post-pandemic Equitable and Sustainable Transport"
+title = "Indicators' Matrix"
 
 # Hero image (optional). Enter filename of an image in the `static/media/` folder.
 hero_media = ""
@@ -37,18 +37,19 @@ hero_media = ""
 #   Display link(s) by specifying a URL and label below. Icon is optional for `[cta]`.
 #   Remove a link/note by deleting a cta/note block.
 [cta]
-  url = "/docs"
-  label = "Read about the project"
+  url = "https://wowchemy.com/docs/install/"
+  label = "View indicators' Matrix"
   icon_pack = "fas"
-  icon = "book"
+  icon = "download"
   
-[cta_alt]
-  url = "/about"
-  label = "Project's Overview"
+#[cta_alt]
+#  url = "https://wowchemy.com"
+#  label = "View Documentation"
 
 # Note. An optional note to show underneath the links.
 #[cta_note]
 #  label = '<a class="js-github-release" href="https://wowchemy.com/updates" data-repo="wowchemy/wowchemy-hugo-modules">Latest release<!-- V --></a>'
 +++
 
-The aim of the PEST project is to increase understanding of place-based policy and activity in relation to active travel in the aftermath of the Covid-19 pandemic by investigating the response of English local planning and highway authorities to the UK government’s Emergency Active Travel Fund (EATF) and Cycling and Walking strategy.
+
+To achieve this we will seek to co-produce a matrix of indicators with stakeholder advisors that can be used to record the nature of measures and the extent to which these support equitable and sustainable transport (i.e. serve low income neighbourhoods; younger and older people; and BAME groups). The matrix will be completed using a mixture of desk-based research of online and published material; online surveys of chief highway officers; and follow-up tele/video conference interviews with a selected sample. A series of in-depth case studies will be conducted for a range of ‘flagship’ authority schemes through site visits and interviews with key actors – criteria for selection will be developed but could include, for example, government backed ‘Future Transport Zones’. A stakeholder advisory group including Sustrans, Cycling UK and Living Streets, will be invited to convene online from inception, and then on a quarterly basis, to co-produce indicators, scrutinise research and monitor progress.

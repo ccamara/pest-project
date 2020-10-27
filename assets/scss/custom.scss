@@ -1,0 +1,15 @@
+$obu-purple: #d10373;
+$obu-dark-grey: #424a52;
+
+.wg-hero {
+    .btn {
+      color: white !important;
+      background-color: $obu-purple;
+      border-color: $obu-purple;
+    }
+    .btn:hover {
+      color: white;
+      background-color: $obu-dark-grey;
+      border-color: $obu-dark-grey;
+    }
+  }

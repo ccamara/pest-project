@@ -1,0 +1,26 @@
+---
+# Title, summary, and page position.
+linktitle: AT Emergency Funds
+summary: Learn how to use Academic's docs layout for publishing online courses, software documentation, and tutorials.
+weight: 1
+icon: book
+icon_pack: fas
+
+# Page metadata.
+title: Active Travel Emergency Funds
+date: "2018-09-09T00:00:00Z"
+type: book  # Do not modify.
+---
+
+
+## Funds' allocation Breakdown
+
+Probably we can represent this in a `treemap` like the following one, in which each area represents an administrative level (County, District, and Parish).
+
+{{< chart data="treemap" >}}
+
+Obviously, this chart is totally unrelated to the project.
+
+## Flexibility
+
+This is some random text
