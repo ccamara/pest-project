@@ -15,11 +15,29 @@ type: book  # Do not modify.
 
 ## Funds' allocation Breakdown
 
+### Treemap
+
 Probably we can represent this in a `treemap` like the following one, in which each area represents an administrative level (County, District, and Parish).
 
 {{< chart data="treemap" >}}
 
 Obviously, this chart is totally unrelated to the project.
+
+### Sankey
+
+Or in a sankey diagram like this one:
+
+<figure class="iframe-wrapper">
+  <embed src="/media/sankey.html" style="height:500px;width:100%">
+</figure>
+
+
+<div class="featured-image-wrapper"> 
+<div style="position: relative">
+<embed class="featured-image" src="/media/sankeyPlotlyBasic1.html" style="height:500px;width:100%">
+</div>
+</div>
+
 
 ## Flexibility
 
