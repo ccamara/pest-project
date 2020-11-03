@@ -18,8 +18,8 @@ subtitle:
 design:
   columns: "1"
   background:
-    image: img/george-street-grey.jpg
-    image_darken: 0.6
+    image: img/george-street.jpg
+    image_darken: 0.7
     image_parallax: true
     image_position: center
     image_size: cover
