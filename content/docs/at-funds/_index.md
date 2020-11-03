@@ -19,9 +19,12 @@ type: book  # Do not modify.
 
 Probably we can represent this in a `treemap` like the following one, in which each area represents an administrative level (County, District, and Parish).
 
-{{< chart data="treemap" >}}
+<!-- We could embed a json like this:
+{{< chart data="treemap" >}} -->
 
-Obviously, this chart is totally unrelated to the project.
+<figure class="iframe-wrapper">
+  <embed src="/media/html_widgets/EATF-breakdown-treemap.html" style="height:900px;width:100%">
+</figure>
 
 ### Sankey
 
