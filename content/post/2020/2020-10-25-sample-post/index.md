@@ -62,6 +62,6 @@ saveWidget(m, file="leaflet-map-embed.html")
 
 <div class="featured-image-wrapper"> 
 <div style="position: relative">
-<embed class="featured-image" src="/media/leaflet-map-embed.html" style="height:500px">
+<embed class="featured-image" src="/media/html_widgets/leaflet-map-embed.html" style="height:500px">
 </div>
 </div>

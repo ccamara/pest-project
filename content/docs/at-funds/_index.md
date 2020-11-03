@@ -31,13 +31,13 @@ Probably we can represent this in a `treemap` like the following one, in which e
 Or in a sankey diagram like this one:
 
 <figure class="iframe-wrapper">
-  <embed src="/media/sankey.html" style="height:500px;width:100%">
+  <embed src="/media/html_widgets/sankey.html" style="height:500px;width:100%">
 </figure>
 
 
 <div class="featured-image-wrapper"> 
 <div style="position: relative">
-<embed class="featured-image" src="/media/sankeyPlotlyBasic1.html" style="height:500px;width:100%">
+<embed class="featured-image" src="/media/html_widgets/sankeyPlotlyBasic1.html" style="height:500px;width:100%">
 </div>
 </div>
 
