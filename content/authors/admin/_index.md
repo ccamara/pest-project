@@ -1,20 +1,20 @@
 ---
 # Display name
-title: PEST
+title: Post-pandemic Equitable and Sustainable Transport
 
 # Is this the primary user of the site?
 superuser: true
 
 # Role/position
-role: Professor of Artificial Intelligence
+role: "Research Project"
 
 # Organizations/Affiliations
 organizations:
-- name: Stanford University
+- name: Oxford Brookes
   url: ""
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include distributed robotics, mobile computing and programmable matter.
+bio: Increasing the understanding of place-based policy and activity in relation to active travel in the aftermath of the Covid-19 pandemic by investigating the response of English local planning and highway authorities to the UK government’s Emergency Active Travel Fund (EATF) and Cycling and Walking strategy.
 
 interests:
 - Artificial Intelligence
@@ -68,6 +68,5 @@ user_groups:
 - Admin
 ---
 
-Nelson Bighetti is a professor of artificial intelligence at the Stanford AI Lab. His research interests include distributed robotics, mobile computing and programmable matter. He leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.
+
