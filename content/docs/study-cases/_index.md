@@ -60,3 +60,12 @@ List of similar maps:
 * Downloadable data: No
 * Notes: few (3) interventions in Oxford
 
+
+## Dashboard
+
+<div class="featured-image-wrapper"> 
+<div style="position: relative">
+<embed src="/media/html_widgets/dashboard.html" style="width:100%;height:500px">
+</div></div>
+
+[full page link](/media/html_widgets/dashboard.html)
