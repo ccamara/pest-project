@@ -1,0 +1,110 @@
+group,parent,level,value_phase1,value_phase2,value_total
+England,,,,,
+North West England,England,1,,,
+East of England,England,1,,,
+South East England,England,1,,,
+South West England,England,1,,,
+East Midlands,England,1,,,
+London,England,1,,,
+North East England,England,1,,,
+West Midlands,England,1,,,
+Yorkshire and the Humber,England,1,,,
+Dorset,South West England,2,,,
+Berkshire,South East England,2,,,
+Buckinghamshire,South East England,2,,,
+East Sussex,South East England,2,,,
+Hampshire,South East England,2,,,
+Kent,South East England,2,,,
+Cheshire,North West England,2,,,
+Lancashire,North West England,2,,,
+Bedfordshire,East of England,2,,,
+Derbyshire,East Midlands,2,,,
+Nottinghamshire,East Midlands,2,,,
+Lincolnshire,East Midlands,2,,,
+Leicestershire,East Midlands,2,,,
+Mereyside,North West England,2,,,
+South Yorkshire,Yorkshire and the Humber,2,,,
+East Riding of Yorkshire,Yorkshire and the Humber,2,,,
+Devon,East of England,2,,,
+Essex,East of England,2,,,
+Staffordshire,West Midlands,2,,,
+Wiltshire,South West England,2,,,
+Shropshire,West Midlands,2,,,
+Cambridgeshire and Peterborough CA,East of England,3,"£642,429.00","£1,724,250.00","£2,366,679.00"
+Greater Manchester CA,North West England,2,"£3,174,000.00","£15,871,250.00","£19,045,250.00"
+Liverpool City Region CA,Mereyside,4,"£1,974,000.00","£7,896,000.00","£9,870,000.00"
+London boroughs and TfL,London,2,"£5,000,000.00","£20,000,000.00","£25,000,000.00"
+North East JTC,North East England,1,"£2,262,000.00","£9,049,000.00","£11,311,000.00"
+Sheffield City Region CA,South Yorkshire,4,"£1,437,000.00","£5,461,550.00","£6,898,550.00"
+Tees Valley CA,England,2,"£481,542.00","£1,722,000.00","£2,203,542.00"
+West Midlands ITA,West Midlands,1,"£3,850,997.00","£13,097,650.00","£16,948,647.00"
+West of England CA,England,,"£827,895.00","£2,964,000.00","£3,791,895.00"
+West Yorkshire CA,Yorkshire and the Humber,,"£2,513,000.00","£10,053,000.00","£12,566,000.00"
+Bedford UA,Bedfordshire,,"£30,250.00","£30,250.00","£60,500.00"
+Blackburn with Darwen UA,Lancashire,,"£77,000.00","£77,000.00","£154,000.00"
+Blackpool UA,Lancashire,,"£26,000.00","£26,000.00","£52,000.00"
+"Bournemouth, Christchurch and Poole UA",Dorset,,"£312,835.00","£312,835.00","£625,670.00"
+Bracknell Forest UA,Berkshire,,"£57,000.00","£57,000.00","£114,000.00"
+Brighton and Hove UA,East Sussex,,"£663,657.00","£663,657.00","£1,327,314.00"
+Buckinghamshire UA,Buckinghamshire,,"£513,943.00","£513,943.00","£1,027,886.00"
+Central Bedfordshire UA,Bedfordshire,,"£223,454.00","£223,454.00","£446,908.00"
+Cheshire East UA,Cheshire,,"£155,000.00","£155,000.00","£310,000.00"
+Cheshire West and Chester UA,Cheshire,,"£161,000.00","£161,000.00","£322,000.00"
+Cornwall UA1,South West England,,"£152,000.00","£152,000.00","£304,000.00"
+Cumbria,North West England,,"£260,323.00","£260,323.00","£520,646.00"
+Derby UA,Derbyshire,,"£227,923.00","£227,923.00","£455,846.00"
+Derbyshire+,Derbyshire,,"£443,000.00","£443,000.00","£886,000.00"
+Devon+,Devon,,"£338,000.00","£338,000.00","£676,000.00"
+Dorset UA,Dorset,,"£128,486.00","£128,486.00","£256,972.00"
+East Riding of Yorkshire UA,East Riding of Yorkshire,,"£123,000.00","£123,000.00","£246,000.00"
+East Sussex+,East Sussex,,"£535,171.00","£535,171.00","£1,070,342.00"
+Essex+,East of England,,"£968,500.00","£968,500.00","£1,937,000.00"
+Gloucestershire,South West England,,"£321,773.00","£321,773.00","£643,546.00"
+Hampshire+,Hampshire,,"£863,000.00","£863,000.00","£1,726,000.00"
+"Herefordshire, County of UA",West Midlands,,"£20,000.00","£20,000.00","£40,000.00"
+Hertfordshire,East of England,,"£1,247,329.00","£1,247,329.00","£2,494,658.00"
+Isle of Wight UA,South East England,,"£62,000.00","£62,000.00","£124,000.00"
+Kent+,Kent,,"£1,600,000.00","£1,600,000.00","£3,200,000.00"
+"Kingston upon Hull, City of UA",East Riding of Yorkshire,,"£272,000.00","£272,000.00","£544,000.00"
+Lancashire+,Lancashire,,"£782,087.00","£782,087.00","£1,564,174.00"
+Leicester UA,Leicestershire,,"£405,568.00","£405,568.00","£811,136.00"
+Leicestershire+,Leicestershire,,"£335,180.00","£335,180.00","£670,360.00"
+Lincolnshire+,Lincolnshire,,"£105,500.00","£105,500.00","£211,000.00"
+Luton UA,Bedfordshire,,"£216,000.00","£216,000.00","£432,000.00"
+Medway UA,Kent,,"£242,500.00","£242,500.00","£485,000.00"
+Milton Keynes UA,Buckinghamshire,,"£228,000.00","£228,000.00","£456,000.00"
+Norfolk,East of England,,"£295,500.00","£295,500.00","£591,000.00"
+North East Lincolnshire UA,Lincolnshire,,"£42,000.00","£42,000.00","£84,000.00"
+North Lincolnshire UA,Lincolnshire,,"£41,000.00","£41,000.00","£82,000.00"
+North Somerset UA,South West England,,"£106,140.00","£106,140.00","£212,280.00"
+North Yorkshire,North East England,,"£133,000.00","£133,000.00","£266,000.00"
+Northamptonshire,East Midlands,,"£351,000.00","£351,000.00","£702,000.00"
+Nottingham UA,Nottinghamshire,3,"£569,806.00","£569,806.00","£1,139,612.00"
+Nottinghamshire+,Nottinghamshire,3,"£263,250.00","£263,250.00","£526,500.00"
+Oxfordshire,South East England,2,"£298,500.00","£298,500.00","£597,000.00"
+Plymouth UA,Devon,,"£249,000.00","£249,000.00","£498,000.00"
+Portsmouth UA,Hampshire,,"£214,515.00","£214,515.00","£429,030.00"
+Reading UA,Berkshire,,"£221,250.00","£221,250.00","£442,500.00"
+Rutland UA,East Midlands,,"£2,500.00","£2,500.00","£5,000.00"
+Shropshire UA,Shropshire,,"£86,000.00","£86,000.00","£172,000.00"
+Slough UA,Berkshire,,"£205,577.00","£205,577.00","£411,154.00"
+Somerset,South West England,,"£120,000.00","£120,000.00","£240,000.00"
+Southampton UA,Hampshire,,"£245,000.00","£245,000.00","£490,000.00"
+Southend-on-Sea UA,Essex,,"£309,000.00","£309,000.00","£618,000.00"
+Staffordshire+,Staffordshire,,"£183,000.00","£183,000.00","£366,000.00"
+Stoke-on-Trent UA,Staffordshire,,"£126,000.00","£126,000.00","£252,000.00"
+Suffolk,East of England,,"£376,519.00","£376,519.00","£753,038.00"
+Surrey,South East England,,"£848,000.00","£848,000.00","£1,696,000.00"
+Swindon UA,Wiltshire,,"£214,515.00","£214,515.00","£429,030.00"
+Telford and Wrekin UA,Shropshire,,"£76,000.00","£76,000.00","£152,000.00"
+Thurrock UA,Essex,,"£288,000.00","£288,000.00","£576,000.00"
+Torbay UA,Devon,,"£41,250.00","£41,250.00","£82,500.00"
+Warrington UA,Cheshire,,"£130,000.00","£130,000.00","£260,000.00"
+Warwickshire,West Midlands,,"£129,000.00","£129,000.00","£258,000.00"
+West Berkshire UA,Berkshire,,"£124,000.00","£124,000.00","£248,000.00"
+West Sussex,South East England,,"£781,000.00","£781,000.00","£1,562,000.00"
+Wiltshire UA,Wiltshire,,"£227,000.00","£227,000.00","£454,000.00"
+Windsor and Maidenhead UA,Berkshire,,"£140,000.00","£140,000.00","£280,000.00"
+Wokingham UA,Berkshire,,"£76,000.00","£76,000.00","£152,000.00"
+Worcestershire,West Midlands,,"£135,500.00","£135,500.00","£271,000.00"
+York UA,Yorkshire and the Humber,,"£193,287.00","£193,287.00","£386,574.00"
