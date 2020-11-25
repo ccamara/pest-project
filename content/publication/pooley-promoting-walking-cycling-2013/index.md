@@ -20,6 +20,18 @@ lastmod: 2020-11-25T17:58:15Z
 featured: false
 draft: false
 
+links:
+ - name: "View at Policy Press"
+   url: "https://policy.bristoluniversitypress.co.uk/promoting-walking-and-cycling"
+url_pdf: ''
+url_code: ''
+url_dataset: ''
+url_poster: ''
+url_project: ''
+url_slides: ''
+url_source: ''
+url_video: ''
+
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.
 # Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.
@@ -40,3 +52,11 @@ publication_types:
 abstract: ''
 publication: '*Policy Press*'
 ---
+
+Promoting walking and cycling proposes solutions to one of the most pressing problems in contemporary British transport planning. The need to develop more sustainable urban mobility lies at the heart of energy and environmental policies and has major implications for the planning of cities and for the structure of economy and society. However, most people feel either unable or unwilling to incorporate travel on foot or by bike into their everyday journeys.
+
+This book uses innovative quantitative and qualitative research methods to examine in depth, and in an international and historical context, why so many people fail to travel in ways that are deemed by most to be desirable. It proposes evidence-based policy solutions that could increase levels of walking and cycling substantially.
+
+This book is essential reading for planners and policy makers who are developing and implementing transport policies at both national and local levels, plus researchers and students in the fields of mobility, transport, sustainability and urban planning.
+
+https://policy.bristoluniversitypress.co.uk/promoting-walking-and-cycling

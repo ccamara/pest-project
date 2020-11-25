@@ -22,6 +22,25 @@ lastmod: 2020-11-25T17:58:14Z
 featured: false
 draft: false
 
+# links:
+# - name: ""
+#   url: ""
+url_pdf: http://www.its.leeds.ac.uk/fileadmin/user_upload/UWCReportSept2011.pdf
+url_code: ''
+url_dataset: ''
+url_poster: ''
+url_project: ''
+url_slides: ''
+url_source: ''
+url_video: ''
+
+# Featured image
+# To use, add an image named `featured.jpg/png` to your page's folder. 
+image:
+  caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/jdD8gXaTZsc)'
+  focal_point: ""
+  preview_only: false
+
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.
 # Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.
