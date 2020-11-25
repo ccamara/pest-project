@@ -1,6 +1,13 @@
 $obu-purple: #d10373;
 $obu-dark-grey: #424a52;
 
+.section-heading {
+  p {
+    color: $obu-dark-grey !important;
+  }
+  
+}
+
 .wg-hero {
     .btn {
       color: white !important;
