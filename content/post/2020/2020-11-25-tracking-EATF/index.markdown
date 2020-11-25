@@ -1,11 +1,12 @@
 ---
 title: 'Tracking Emergency Active Travel Funds '
-subtitle: ''
-summary: Create a beautifully simple website in under 10 minutes.
+subtitle: 'Some visualizations to track EATF'
+summary: ''
 authors:
 - carlos-camara
 tags:
 - EATF
+- Visualization
 categories:
 - Context
 date: "2020-10-20T00:00:00Z"
@@ -82,7 +83,7 @@ Cycling UK has a [specific page on their website](https://www.cyclinguk.org/cycl
 
 The map provides basic information per unitary authority, such as the name of the authority, the total allocated funds, the difference from the expected total and a link to contact local authority. While quite easy to understand, it is unclear where data is gathered and, therefore, to assess its exhaustiveness and accuracy. Also, data is locked in Google Mymaps plattform, with no possibility to download data nor contribute to the map.
 
-They used to have another map named "[Social Distancing - Active Travel interventions in the UK](https://www.google.com/maps/d/viewer?mid=1CbqvW6Q-FQaPzIeXwnzmS4l2pDJjtWry&usp=sharing)", providing locations in the UK and Crown Dependencies where councils have taken action to protect social distancing and linking to source of information (either City council's official pages (eg.[ https://www.oxford.gov.uk/news/article/1420/city\_council\_to\_explore\_once\_in\_a\_generation\_improvements\_to\_city\_centre\_beyond\_the\_coronavirus\_pandemic](https://www.oxford.gov.uk/news/article/1420/city_council_to_explore_once_in_a_generation_improvements_to_city_centre_beyond_the_coronavirus_pandemic)) ot tweets (eg.[ https://twitter.com/TweetbeatIOM/status/1243579094207520769](https://twitter.com/TweetbeatIOM/status/1243579094207520769)). The map had a contact email address to add missing information, but no other types of collaboration were present.
+They used to have another map named "[Social Distancing - Active Travel interventions in the UK](https://www.google.com/maps/d/viewer?mid=1CbqvW6Q-FQaPzIeXwnzmS4l2pDJjtWry&usp=sharing)", providing locations in the UK and Crown Dependencies where councils have taken action to protect social distancing and linking to source of information (either City council's official pages [like this one](https://www.oxford.gov.uk/news/article/1420/city_council_to_explore_once_in_a_generation_improvements_to_city_centre_beyond_the_coronavirus_pandemic) ot tweets [like this one](https://twitter.com/TweetbeatIOM/status/1243579094207520769)). The map had a contact email address to add missing information, but no other types of collaboration were present.
 
   
 
