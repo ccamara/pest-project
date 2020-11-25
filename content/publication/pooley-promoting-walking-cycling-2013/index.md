@@ -38,7 +38,7 @@ url_video: ''
 image:
   caption: ''
   focal_point: ''
-  preview_only: false
+  preview_only: true
 
 # Projects (optional).
 #   Associate this post with one or more of your projects.
@@ -58,5 +58,3 @@ Promoting walking and cycling proposes solutions to one of the most pressing pro
 This book uses innovative quantitative and qualitative research methods to examine in depth, and in an international and historical context, why so many people fail to travel in ways that are deemed by most to be desirable. It proposes evidence-based policy solutions that could increase levels of walking and cycling substantially.
 
 This book is essential reading for planners and policy makers who are developing and implementing transport policies at both national and local levels, plus researchers and students in the fields of mobility, transport, sustainability and urban planning.
-
-https://policy.bristoluniversitypress.co.uk/promoting-walking-and-cycling
