@@ -32,9 +32,7 @@ image:
 projects: []
 ---
 
-As part of the Government's measures to face COVID-19 pandemic, [Secretariat of State announced 23rd May 2020 a £250 million package](https://www.gov.uk/government/news/2-billion-package-to-create-new-era-for-cycling-and-walking) to reallocate road space to encourage active travel while keeping 2-meter social distancing. The package, known as **Emergency Active Travel Funds (EATF)**, is to foster already ongoing measures towards decarbonisation such as installing cycle facilities with a minimum level of physical separation from volume traffic, encouraging walking and cycling to school, reducing speed limits, introducing pedestrian and cycle zones and modal filters amongst others (Department of Transport, 2020). Local authorities were to apply by submitting their proposals, in either of its two phases (May 2020 and November 2020) and the final EATF allocation can be accessed in [this page at Department of Transport's transparency data.](https://www.gov.uk/government/publications/emergency-active-travel-fund-local-transport-authority-allocations/emergency-active-travel-fund-total-indicative-allocations) Unfortunately, it only lists succinct information per unitary authority, with no further information about the location and typology of the actually funded schemes.
-
-
+As part of Government measures to face COVID-19 pandemic on local travel, [the Department of Transport announced 23rd May 2020 a £250 million package](https://www.gov.uk/government/news/2-billion-package-to-create-new-era-for-cycling-and-walking) to reallocate road space to encourage active travel (walking and cycling) while keeping social distancing. The package, known as **Emergency Active Travel Funds (EATF)**, is to support already ongoing measures to decarbonise the transport system. This includes installing cycle facilities, encouraging walking and cycling to school, reducing speed limits, introducing pedestrian and cycle zones and modal filters, amongst others (Department of Transport, 2020). Local authorities were able to for funds in two phases (May 2020 and November 2020), the final EATF allocation can be accessed in [this page at Department of Transport's transparency data.](https://www.gov.uk/government/publications/emergency-active-travel-fund-local-transport-authority-allocations/emergency-active-travel-fund-total-indicative-allocations) Unfortunately, this list only provides allocated phase 1 and phase 2 funding information per authority, and at the time of writing, there is no further information about the specific nature and location of schemes.
 
 <figure class="iframe-wrapper">
   <embed src="/media/html_widgets/EATF-breakdown-treemap.html" style="height:900px;width:100%">
@@ -74,7 +72,7 @@ Since the goal is to inform decision-makers about places that are considered to 
 <figure class="iframe-wrapper">
   <embed src="https://www.google.com/maps/d/embed?mid=1x7LrFvjDTA-hi_3pt7oquOfMAnUV5LKG" style="height:500px;width:100%">
   <figcaption data-pre="Figure " data-post=":" class="numbered">
-    Cycling UK's 
+    Cycling UK 
   </figcaption>
 </figure>
 
@@ -92,7 +90,7 @@ They used to have another map named "[Social Distancing - Active Travel interven
 <figure class="iframe-wrapper">
   <embed src="https://sustrans-uk.maps.arcgis.com/apps/Styler/index.html?appid=97f27220279d48c3a4bc44e5aecdde3d" style="height:500px;width:100%">
   <figcaption data-pre="Figure " data-post=":" class="numbered">
-    Sustrans' Space to Move app.
+    Sustrans' Space to Move.
   </figcaption>
 </figure>
 
@@ -100,6 +98,9 @@ They used to have another map named "[Social Distancing - Active Travel interven
 
 Space to Move is updated on a weekly basis and currently has more than 1,200 points, making it one of the more comprehensive maps we have just found. Furthermore, it is a live map which anyone can contribute to in two different ways. First, sharing their opinion about specific schemes by filling a survey linked to every node. Second, populate the database with missing schemes by filling a [public form](https://www.surveymonkey.co.uk/r/spacetomoveschemes) with the requested information. Last, but not least, data is licenced under ODbL and can be downloaded from [Sustrans' OpenData portal](https://data-sustrans-uk.opendata.arcgis.com/search?tags=space%20to%20move), making it extremely easy to reuse and analyse it by anyone who is interested.
 
+## Our contribution
+
+Taking all of this into account, the PEST project will be reviewing these portals and working with our [stakeholders](/about/#people) to develop our knowledge of EATF schemes and how these can be recorded and evaluated.
   
 ## References
 
