@@ -6,7 +6,7 @@ active = true  # Activate this widget? true/false
 weight = 65  # Order that this section will appear.
 
 title = "Study Cases"
-subtitle = ""
+subtitle = "This stripe can easily be hidden until we have information about study cases"
 
 [content]
   # Page type to display. E.g. project.
@@ -26,12 +26,23 @@ subtitle = ""
      tag = "*"
   
    [[content.filter_button]]
-     name = "London"
-     tag = "London"
-  
+     name = "Lancaster"
+     tag = "Lancaster"
+   [[content.filter_button]]
+     name = "Leeds"
+     tag = "Leeds"
+
+   [[content.filter_button]]
+     name = "Leicester"
+     tag = "Leicester"
+
    [[content.filter_button]]
      name = "Oxford"
      tag = "Oxford"
+
+   [[content.filter_button]]
+     name = "Woucester"
+     tag = "Woucester"
 
 [design]
   # Choose how many columns the section has. Valid values: 1 or 2.

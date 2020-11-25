@@ -31,10 +31,10 @@ design:
 ### Background 
 
 The Covid-19 pandemic has created unprecedented challenges for the way we move around today. As government looks to end lock-down and get the public back to work, there are huge challenges for the transport system. Social distancing measures specifying a two-metre physical distancing rule to reduce the spread of the virus create a ‘capacity challenge’. To address this, local authorities have been tasked by government to rapidly develop policies and projects to support active travel such as, walking, cycling, electric biking (‘e-biking’) and electric scooting (‘e-scooting’).
-
+<!-- 
 ### Goals:
 
 
 * Increase understanding of place-based policy and activity in relation to active travel in the aftermath of the Covid-19 pandemic
   * Assess how they support equitable and sustainable transport for most vulnerable colectives/areas
-  * Assess Active Travel’s role in the transition to climate neutrality and healthier and more equitable ecosystems
+  * Assess Active Travel’s role in the transition to climate neutrality and healthier and more equitable ecosystems -->

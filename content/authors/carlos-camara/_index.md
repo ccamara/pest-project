@@ -16,6 +16,8 @@ organizations:
 # Short bio (displayed in user profile at end of posts)
 bio: I pursue a positive impact on people’s lives through the shaping of physical and digital spaces. 
 
+weight: 3
+
 education:
   courses:
   - course: PhD (Urban Sociology)

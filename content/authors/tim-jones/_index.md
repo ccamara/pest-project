@@ -16,6 +16,8 @@ organizations:
 # Short bio (displayed in user profile at end of posts)
 bio: My research interests focus around how urban environments can be (re)configured to support and promote sustainable and healthy urban mobility, particularly walking and cycling.
 
+weight: 1
+
 education:
   courses:
   - course: PhD in Urban Planning

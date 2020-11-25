@@ -16,6 +16,8 @@ organizations:
 # Short bio (displayed in user profile at end of posts)
 bio: Research Fellow in Built Environment & Healthy Ageing curently working on research projects including healthy workplaces and e-bike commuting.
 
+weight: 2
+
 education:
   courses:
   - course: PhD (Urban Design and Gerontology)
