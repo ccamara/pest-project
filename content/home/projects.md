@@ -41,8 +41,8 @@ subtitle = "This stripe can easily be hidden until we have information about stu
      tag = "Oxford"
 
    [[content.filter_button]]
-     name = "Woucester"
-     tag = "Woucester"
+     name = "Worcester"
+     tag = "Worcester"
 
 [design]
   # Choose how many columns the section has. Valid values: 1 or 2.
