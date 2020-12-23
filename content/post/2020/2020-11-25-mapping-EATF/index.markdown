@@ -1,7 +1,7 @@
 ---
-title: 'Tracking Emergency Active Travel Funds '
+title: 'Mapping Emergency Active Travel Funds '
 subtitle: ''
-summary: ''
+summary: 'For the PEST project we aim to develop an understanding of what local authorities are doing in relation to supporting Active Travel in light of this funding and whether and how this is being documented. We have carried out some initial scoping to identify the extent to which (E)ATF schemes are being mapped. This has revealed several sources.'
 authors:
 - tim-jones
 - carlos-camara
@@ -36,48 +36,7 @@ projects: []
 As part of the Government's measures to mitigate the impact of Covid-19 pandemic on local travel, [the Department of Transport announced a £250 million package](https://www.gov.uk/government/news/2-billion-package-to-create-new-era-for-cycling-and-walking) to to reallocate road space to encourage active travel (walking and cycling) across England. Local authorities were able to apply for funds in two phases. The initial package, known as the **Emergency Active Travel Fund (EATF) phase 1**, announced in May 2020, was to support temporary measures including pop-up ‘emergency’ bike lanes; wider pavements; junction improvements; and, cycle and bus-only streets. These phase one awards were announced in July 2020. Investment to support the creation of longer-term projects as part of a phase two Active Travel Fund (ATF) was announced in November 2020. This [list](https://www.gov.uk/government/publications/emergency-active-travel-fund-local-transport-authority-allocations/emergency-active-travel-fund-total-indicative-allocations) provides details of the allocations for phase 1 and phase 2 funding per authority.
 
 
-```{r Treemap, eval=FALSE, fig.cap='Treemap displaying total EATF Allocation by local authority.', message=FALSE, warning=FALSE, include=FALSE}
-library(plotly)
-library(tidyverse)
-library(htmlwidgets)
 
-df <- read_csv("data/EATF_Breadkown.csv", 
-               col_types = cols(.default = "f", group = "c", 
-                                value_phase1 = "n", value_phase2 = "n", 
-                                value_total = "n")) %>%
-  mutate(group = trimws(group)) %>%
-  mutate(parent = trimws(parent))
-
-
-# Total -----------------------------------------------------------------
-
-df_group <- df %>%
-  count(parent, wt = value_total, sort = TRUE, name = "total")
-
-df2 <- df %>%
-  mutate(value_total = replace(value_total, which(is.na(value_total)),0))
-
-# Now, areas are proportional to value.
-fig <- plot_ly(
-  type="treemap",
-  labels=df2$group,
-  parents=df2$parent,
-  values=df2$value_total,
-  textinfo="label+value+percent parent+percent entry",
-  # hovertemplate="%{label}: %{value:$,s} <br>(%{percent})",
-)
-
-fig <- fig %>%
-  layout(
-    title = "Emergency Active Travel Funds' Breadkown (Phase 1 + Phase 2)",
-    annotations =
-      list(x = 1, y = -0.1, text = "Source: PEST, Data: Department of Transport",
-           showarrow = F, xref='paper', yref='paper',
-           xanchor='right', yanchor='auto', xshift=0, yshift=0,
-           font=list(size=15, color="grey"))
-  )
-fig
-```
 
 <figure class="iframe-wrapper">
   <embed src="/media/html_widgets/EATF-breakdown-treemap.html" style="height:900px;width:100%">
@@ -89,10 +48,6 @@ fig
 <!-- {{< chart data="treemap" >}} -->
 
 For the PEST project we aim to develop an understanding of what local authorities are doing in relation to supporting Active Travel in light of this funding and whether and how this is being documented. We have carried out some initial scoping to identify the extent to which (E)ATF schemes are being mapped. This has revealed several sources.
-
-
-
-
 
 [Cyclestreets](https://www.cyclestreets.org), [Widen my path](https://www.widenmypath.com/) is a crowdsourced database that enables anyone to add suggestions on how city councils could modify public space to broaden paths for keeping social distance, as well as voting existing suggestions. Proposals can be of these 3 categories: space for cycling, wider pavements; closures to through-traffic. Since the goal is to inform decision-makers about places that are considered to be crucial or feasible, Cyclestreets has made the effort for this tool to be re-used, by providing an Application Programming Interface (API)[^1] to customize how can it be embedded in other websites, releasing all the data under open license and open, structured file formats such as `CSV` and `GeoJson` and providing a link to a page from Cycling UK where informatino can be submitted to city councils.
 
