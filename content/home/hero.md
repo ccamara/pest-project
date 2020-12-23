@@ -42,9 +42,9 @@ hero_media = ""
   icon_pack = "fas"
   icon = "book"
   
-[cta_alt]
-  url = "/about"
-  label = "Project's Overview"
+#[cta_alt]
+#  url = "/about"
+#  label = "Project's Overview"
 
 # Note. An optional note to show underneath the links.
 #[cta_note]
