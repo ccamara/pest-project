@@ -6,7 +6,7 @@ active = true  # Activate this widget? true/false
 weight = 65  # Order that this section will appear.
 
 title = "Study Cases"
-subtitle = "This stripe can easily be hidden until we have information about study cases"
+subtitle = "Coming soon!"
 
 [content]
   # Page type to display. E.g. project.
@@ -86,3 +86,4 @@ subtitle = "This stripe can easily be hidden until we have information about stu
  css_class = ""
 +++
 
+We are conducting in-depth case study investigations for Oxfordshire and also the previous four case study areas used for the [Understanding Walking and Cycling study](/publication/pooley-2011-understanding/) which ran from 2008 to 2011 [(EPSRC Grant Reference EP/G00045X/1)](https://gow.epsrc.ukri.org/NGBOViewGrant.aspx?GrantRef=EP/G00045X/1)
