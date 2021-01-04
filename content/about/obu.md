@@ -29,12 +29,4 @@ design:
 
 ---
 
-Some explanation here about OBU and, possibly about the funding, and that has been designed by Tim and Ben.
-
-<!-- 
-### Goals:
-
-
-* Increase understanding of place-based policy and activity in relation to active travel in the aftermath of the Covid-19 pandemic
-  * Assess how they support equitable and sustainable transport for most vulnerable colectives/areas
-  * Assess Active Travel’s role in the transition to climate neutrality and healthier and more equitable ecosystems -->
+[Oxford Brookes University](https://www.brookes.ac.uk/) has over 150 years of history. We started out as a small School of Art in borrowed teaching rooms and have grown into one of the UK's top modern universities with a local, national and international reputation for teaching and research excellence (see some of our [recent results and achievements here](https://www.brookes.ac.uk/about-brookes/at-a-glance/results-and-achievements/)).

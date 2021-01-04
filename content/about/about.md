@@ -30,7 +30,8 @@ design:
 
 ### Background 
 
-The Covid-19 pandemic has created unprecedented challenges for the way we move around today. As government looks to end lock-down and get the public back to work, there are huge challenges for the transport system. Social distancing measures specifying a two-metre physical distancing rule to reduce the spread of the virus create a ‘capacity challenge’. To address this, local authorities have been tasked by government to rapidly develop policies and projects to support active travel such as, walking, cycling, electric biking (‘e-biking’) and electric scooting (‘e-scooting’).
+The Covid-19 pandemic has created unprecedented challenges for the way we move around today. Active travel could play a significant role in any green recovery investment package to accelerate the transition to climate neutrality and healthier and more equitable ecosystems. This will, however, depend on government policy and supporting legislation; level of investment; the ambition of local authorities to pursue active travel schemes; local political will, and of course, public response in the context of broader social and economic challenges.
+
 <!-- 
 ### Goals:
 
