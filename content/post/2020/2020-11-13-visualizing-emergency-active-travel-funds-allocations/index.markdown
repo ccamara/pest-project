@@ -34,7 +34,7 @@ projects: []
 
 
 
-Last 13<sup>th</sup> November the DfT annonunced the allocation of £107,778,288, corresponding to the second phase of the Emergency Active Travel Funds (EATF). While phase 1, allocated on May 2020 and accounting for £42,102,451, was aimed to support the installation of temporary projects for the COVID-19 pandemic, this second, more ambitious one, one is aimed to support the creation of longer-term projects. **Both allocation phases account for a total of £149,880,739, which is notably smaller (60%) than the [announced £250 million](https://www.gov.uk/government/news/2-billion-package-to-create-new-era-for-cycling-and-walking).**
+Last 13<sup>th</sup> November the DfT annonunced the allocation of £107,778,288, corresponding to the second phase of the Emergency Active Travel Funds (EATF). While phase 1, allocated on May 2020 and accounting for £42,102,451, was aimed to support the installation of temporary projects for the COVID-19 pandemic, this second, more ambitious, one is aimed to support the creation of longer-term projects. Both allocation phases account for a total of £149,880,739, which is notably smaller (60%) than the [announced £250 million](https://www.gov.uk/government/news/2-billion-package-to-create-new-era-for-cycling-and-walking).
 
 In our aim to get an understanding about EATF, we have prepared a series of interactive visuals in order to contribute to better understand where the funds have been allocated. The following interactive table displays how much has been allocated in every region of England. Results can be searched and sorted by clicking on the header, making it easy to see how much has been spent in a specific region, and how does it stand compared to other regions and/or phases.
 
