@@ -1,0 +1,194 @@
+---
+title: "Visualizing Emergency Active Travel Funds' Allocations"
+subtitle: 'EATF Second Allocation Phase has been announced'
+summary: ''
+authors:
+- carlos-camara
+tags:
+- EATF
+categories:
+- Context
+date: "2020-11-13T00:00:00Z"
+#lastmod: "2019-04-17T00:00:00Z"
+featured: false
+draft: false
+
+# Featured image
+# To use, add an image named `featured.jpg/png` to your page's folder.
+# Placement options: 1 = Full column width, 2 = Out-set, 3 = Screen-width
+# Focal point options: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight
+image:
+  placement: 2
+  caption: "Oxford's High Street. Photo: <a href=\"https://unsplash.com/@hpetersen14\">Hannah Petersen</a>"
+  focal_point: ""
+  preview_only: false
+
+# Projects (optional).
+#   Associate this post with one or more of your projects.
+#   Simply enter your project's folder or file name without extension.
+#   E.g. `projects = ["internal-project"]` references `content/project/deep-learning/index.md`.
+#   Otherwise, set `projects = []`.
+projects: []
+---
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+library(plotly)
+library(tidyverse)
+library(htmlwidgets)
+library(DT)
+
+eatf_df <- read_csv("data/EATF_Breadkown.csv", 
+               col_types = cols(.default = "f", group = "c", 
+                                value_phase1 = "n", value_phase2 = "n", 
+                                value_total = "n")) %>%
+  mutate(group = trimws(group)) %>%
+  mutate(parent = trimws(parent)) 
+
+eatf_df_summary <- eatf_df %>% 
+  filter(value_phase1 != "") %>% 
+  select(group, value_phase1, value_phase2, value_total) %>% 
+  # mutate(across(where(is.numeric), ))
+  rename(Region = group,
+         Phase1 = value_phase1,
+         Phase2 = value_phase2,
+         Total = value_total) %>% 
+  arrange(desc(Total))
+```
+
+
+Last 13<sup>th</sup> November the DfT annonunced the second allocation phase of the Emergency Active Travel Funds. While phase 1 (allocated on May 2020) was aimed to support the installation of temporary projects for the COVID-19 pandemic, this second one is aimed to support the creation of longer-term projects.
+
+The following table displays...
+
+I should add a style to be displayed wider.
+
+```{r eval=FALSE, include=FALSE}
+table <- datatable(eatf_df_summary) %>% 
+  formatCurrency(2:4, currency = "£ ")
+
+table 
+
+saveWidget(table, file="eatf-allocation-table-embed.html")
+```
+
+Add some treemaps (and possibly maps?)
+
+<div class="wide-child">
+  <figure class="iframe-wrapper">
+    <embed src="/media/html_widgets/EATF-breakdown-datatable.html" style="height:auto;width:100%">
+    <figcaption data-pre="Figure " data-post=":" class="numbered">
+      Interactive Table with the EATF Allocation</br>Data: Department of Transport.
+    </figcaption>
+  </figure>
+</div>
+
+
+<figure class="iframe-wrapper">
+  <embed src="/media/html_widgets/EATF-breakdown-datatable.html" class="wide-child">
+  <figcaption data-pre="Figure " data-post=":" class="numbered">
+    Interactive Table with the EATF Allocation</br>Data: Department of Transport.
+  </figcaption>
+</figure>
+
+
+That's the original code: 
+
+<figure class="iframe-wrapper">
+  <embed src="/media/html_widgets/EATF-breakdown-datatable.html" style="height:900px;width:100%">
+  <figcaption data-pre="Figure " data-post=":" class="numbered">
+    Interactive Table with the EATF Allocation</br>Data: Department of Transport.
+  </figcaption>
+</figure>
+
+
+
+{{< figure src="featured.jpg" title="A caption" numbered="true" >}}
+
+<div class="wide-child">
+{{< figure src="featured.jpg" title="This image should be wider, but it's hidden under the article-container" numbered="true" >}}
+</div
+
+```{r Treemap, eval=FALSE, fig.cap='Treemap displaying total EATF Allocation by local authority.', message=FALSE, warning=FALSE, include=FALSE}
+
+
+# Phase 1 -----------------------------------------------------------------
+
+eatf_df_p1 <- eatf_df %>%
+  count(parent, wt = value_phase1, sort = TRUE, name = "total") 
+
+eatf_df_p1 <- eatf_df %>% 
+  mutate(value_phase1 = replace(value_phase1, which(is.na(value_phase1)),0))
+
+# Now, areas are proportional to value.
+fig_fap1 <- plot_ly(
+  type="treemap",
+  labels=eatf_df_p1$group,
+  parents=eatf_df_p1$parent,
+  values=eatf_df_p1$value_phase1,
+  textinfo="label+value+percent parent+percent entry",
+  # hovertemplate="%{label}: %{value:$,s} <br>(%{percent})",
+)
+
+fig_fap1 <- fig_fap1 %>%
+  layout(
+    title = "Emergency Active Travel Funds' Breadkown (Phase 1)",
+    annotations =
+      list(x = 1, y = -0.1, text = "Source: PEST, Data: Department of Transport",
+           showarrow = F, xref='paper', yref='paper',
+           xanchor='right', yanchor='auto', xshift=0, yshift=0,
+           font=list(size=15, color="grey"))
+  )
+fig_fap1
+
+# Phase 2 -----------------------------------------------------------------
+
+eatf_df_p2 <- eatf_df %>%
+  count(parent, wt = value_phase1, sort = TRUE, name = "total") 
+
+eatf_df_p2 <- eatf_df %>% 
+  mutate(value_phase2 = replace(value_phase2, which(is.na(value_phase2)),0))
+
+# Now, areas are proportional to value.
+fig_fap2 <- plot_ly(
+  type="treemap",
+  labels=eatf_df_p2$group,
+  parents=eatf_df_p2$parent,
+  values=eatf_df_p2$value_phase2,
+  textinfo="label+value+percent parent+percent entry",
+  # hovertemplate="%{label}: %{value:$,s} <br>(%{percent})",
+)
+
+fig_fap2 <- fig_fap2 %>%
+  layout(
+    title = "Emergency Active Travel Funds' Breadkown (Phase 2)",
+    annotations =
+      list(x = 1, y = -0.1, text = "Source: PEST, Data: Department of Transport",
+           showarrow = F, xref='paper', yref='paper',
+           xanchor='right', yanchor='auto', xshift=0, yshift=0,
+           font=list(size=15, color="grey"))
+  )
+fig_fap2
+```
+
+<figure class="iframe-wrapper">
+  <embed src="/media/html_widgets/EATF-breakdown-treemap-phase1.html" style="height:900px;width:100%">
+  <figcaption data-pre="Figure " data-post=":" class="numbered">
+    Interactive Treemap displaying total EATF Allocation Phase 1 by local authority. </br>Source: PEST. Data: Department of Transport.
+  </figcaption>
+</figure>
+
+<figure class="iframe-wrapper">
+  <embed src="/media/html_widgets/EATF-breakdown-treemap-phase2.html" style="height:900px;width:100%">
+  <figcaption data-pre="Figure " data-post=":" class="numbered">
+    Interactive Treemap displaying EATF Allocation Phase 2 by local authority. </br>Source: PEST. Data: Department of Transport.
+  </figcaption>
+</figure>
+
+<figure class="iframe-wrapper">
+  <embed src="/media/html_widgets/EATF-breakdown-treemap-total.html" style="height:900px;width:100%">
+  <figcaption data-pre="Figure " data-post=":" class="numbered">
+    Interactive Treemap displaying total EATF Allocation by local authority. </br>Source: PEST. Data: Department of Transport.
+  </figcaption>
+</figure>
+
+
