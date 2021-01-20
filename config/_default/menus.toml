@@ -29,6 +29,11 @@
 #   weight = 40
 
 [[main]]
+  name = "Stakeholders"
+  url = "#people"
+  weight = 50
+
+[[main]]
   name = "Contact"
   url = "#contact"
   weight = 60
