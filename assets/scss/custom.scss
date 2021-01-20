@@ -4,22 +4,21 @@ $obu-dark-grey: #424a52;
 .section-heading {
   p {
     color: $obu-dark-grey !important;
-  }
-  
+  }  
 }
 
 .wg-hero {
-    .btn {
-      color: white !important;
-      background-color: $obu-purple;
-      border-color: $obu-purple;
-    }
-    .btn:hover {
-      color: white;
-      background-color: $obu-dark-grey;
-      border-color: $obu-dark-grey;
-    }
+  .btn {
+    color: white !important;
+    background-color: $obu-purple;
+    border-color: $obu-purple;
   }
+  .btn:hover {
+    color: white;
+    background-color: $obu-dark-grey;
+    border-color: $obu-dark-grey;
+  }
+}
 
 .site-footer {
   img {
