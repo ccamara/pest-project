@@ -100,7 +100,7 @@ address = {street = "Headington Road", city = "Oxford", region = "Oxfordshire", 
 coordinates = {latitude = "51.7547329", longitude = "-1.2246919"}
 
 # Directions for visitors to locate you.
-directions = "School of the Built Environment. Abercroombie Building, Headington Campus"
+directions = "Oxford Brookes University, Headington Campus, Oxford"
 
 # Office hours
 # A list of your office hours. To remove, set to an empty list `[]`.

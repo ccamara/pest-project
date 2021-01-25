@@ -65,7 +65,7 @@ Last 13<sup>th</sup> November the DfT annonunced the allocation of `r dollar(tot
 
 In our aim to get an understanding about EATF, we have prepared a series of interactive visuals in order to contribute to better understand where the funds have been allocated. The following interactive table displays how much has been allocated in every region of England. Results can be searched and sorted by clicking on the header, making it easy to see how much has been spent in a specific region, and how does it stand compared to other regions and/or phases.
 
-```{r eval=FALSE, include=FALSE}
+```{r echo=FALSE}
 table <- datatable(eatf_df_summary) %>% 
   formatCurrency(2:4, currency = "£ ") %>% 
   formatStyle(
@@ -89,8 +89,17 @@ table <- datatable(eatf_df_summary) %>%
 
 table 
 
-saveWidget(table, file="eatf-allocation-table-embed.html")
+# saveWidget(table, file="eatf-allocation-table-embed.html")
 ```
+
+```{r}
+df %>% 
+  select(-group, -level) %>% 
+  group_by(parent) %>% 
+  summarise(across(where(is.numeric), sum)) %>% 
+  datatable()
+```
+
 
 <div class="wide-child">
   <figure class="iframe-wrapper">
@@ -106,7 +115,7 @@ non-metropolitan counties[^Regions-UK]), but does not explain the geographical d
 Each rectangle in the following interactive treemaps represent the amount allocated by region. Rectangles with same colour belong to the same tier-1 region and each area matches proportionally the allocated amount, in relation to the total. Additionally, each rectangle has a label displaying the region's name, the total allocated amount and the percentage in relation to the parent region and in relation to the total displayed in the screen (entry). It is possible to zoom in by clicking on any rectangle and zoom out by clicking on the upper breadcrumb.
 
 
-```{r Treemap, eval=FALSE, fig.cap='Treemap displaying total EATF Allocation by local authority.', message=FALSE, warning=FALSE, include=FALSE}
+```{r Treemap, echo=FALSE, fig.cap='Treemap displaying total EATF Allocation by local authority.', message=FALSE, warning=FALSE}
 
 
 # Phase 1 -----------------------------------------------------------------
@@ -120,6 +129,7 @@ eatf_df_p1 <- eatf_df %>%
 # Now, areas are proportional to value.
 fig_fap1 <- plot_ly(
   type="treemap",
+  branchvalues="total",
   labels=eatf_df_p1$group,
   parents=eatf_df_p1$parent,
   values=eatf_df_p1$value_phase1,

@@ -20,7 +20,7 @@ weight: 3
 
 education:
   courses:
-  - course: PhD (Urban Sociology)
+  - course: PhD Information and Knowledge Society (Urban Sociology)
   - course: MArchitecture
 
 

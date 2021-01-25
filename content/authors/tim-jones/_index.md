@@ -21,6 +21,7 @@ weight: 1
 education:
   courses:
   - course: PhD in Urban Planning
+  - course: MA Environmental Management
     
 
 # Social/Academic Networking

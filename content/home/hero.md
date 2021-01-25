@@ -5,7 +5,7 @@ headless = true  # This file represents a page section.
 active = true  # Activate this widget? true/false
 weight = 10  # Order that this section will appear.
 
-title = "Post-pandemic Equitable and Sustainable Transport"
+title = "<span style=\"color:#d10373;\">P</span>ost-pandemic <span style=\"color:#d10373;\">E</span>quitable and <span style=\"color:#d10373;\">S</span>ustainable <span style=\"color:#d10373;\">T</span>ransport"
 
 # Hero image (optional). Enter filename of an image in the `static/media/` folder.
 hero_media = ""
@@ -38,7 +38,7 @@ hero_media = ""
 #   Remove a link/note by deleting a cta/note block.
 [cta]
   url = "/about"
-  label = "Know more about the project"
+  label = "Find out more about the project"
   icon_pack = "fas"
   icon = "info-circle"
   

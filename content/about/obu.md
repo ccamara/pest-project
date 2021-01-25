@@ -12,8 +12,8 @@ headless: true
 # Order that this section appears on the page.
 weight: 100
 
-title: "Oxford Brookes University"
-subtitle: "![](media/obu-logo-250.png)"
+title: "[![Oxford Brookes University](/media/obu-logo.png)](https://www.brookes.ac.uk)"
+subtitle: ""
 
 design:
   columns: "2"
