@@ -1,9 +1,9 @@
 ---
 title: Visualizing Emergency Active Travel Funds' Allocations
 subtitle: EATF Second Allocation Phase has been announced
-date: 2020-11-13T00:00:00Z
+date: 2020-11-13T00:00:00.000Z
 summary: ""
-draft: false
+draft: true
 featured: false
 authors:
   - carlos-camara
