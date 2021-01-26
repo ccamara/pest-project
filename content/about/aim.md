@@ -26,7 +26,7 @@ The aim of the PEST project is to increase understanding of place-based policy a
 
 The project will investigate the scope and scale of the package of post Covid-19 measures adopted by all English local highway authorities to support active travel. It will identify successful (and less successful) processes of delivery in terms of engagement strategy, the actors involved, and any new or existing frameworks that were instrumental in project realisation.
 
-A basic evaluation framework will be produced with stakeholder advisors that records and maps the nature of measures and the extent to which these support equitable and sustainable transport (e.g. serve low income neighbourhoods). The matrix will be completed using a mixture of desk-based research of online and published material; crowdsourcing and online surveys of highway officers; and follow-up tele/video conference interviews with stakeholders. 
+A basic evaluation framework will be produced with stakeholder advisors that records and maps the nature of measures. The matrix will be completed using a mixture of desk-based research of online and published material; crowdsourcing and online surveys of highway officers; and follow-up tele/video conference interviews with stakeholders. 
 
 A series of [in-depth case studies](/#case-studies) will be conducted for a selection of authority areas which will include site visits and interviews with key actors. We have selected Oxfordshire (where our institution is based) and the four case areas used for the [Understanding Walking and Cycling](/publication/pooley-2011-understanding-waking-cycling/) study (Lancashire, Leeds, Leicestershire and Worcestershire).
 
