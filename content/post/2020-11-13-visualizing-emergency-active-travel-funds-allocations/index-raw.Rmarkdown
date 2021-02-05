@@ -37,6 +37,7 @@ library(tidyverse)
 library(scales)
 library(htmlwidgets)
 library(DT)
+library(formattable)
 
 eatf_df <- read_csv("data/EATF_Breadkown.csv", 
                col_types = cols(.default = "f", group = "c", 
@@ -44,6 +45,26 @@ eatf_df <- read_csv("data/EATF_Breadkown.csv",
                                 value_total = "n")) %>%
   mutate(group = trimws(group)) %>%
   mutate(parent = trimws(parent)) 
+
+eatf_allocations <- read_csv("data/EATF_Allocations.csv",
+                             col_types = cols(.default = "n",
+                                              region = "c")) %>% 
+  filter(region != "Total") %>% 
+  select(-type) %>% 
+  arrange(desc(value_phase1)) %>% 
+  mutate(rank_phase1 = 1:nrow(eatf_allocations)) %>% 
+  arrange(desc(value_phase2)) %>% 
+  mutate(rank_phase2 = 1:nrow(eatf_allocations)) %>% 
+  arrange(desc(value_total)) %>% 
+  mutate(rank_total = 1:nrow(eatf_allocations)) %>% 
+  mutate(rank_variation = rank_phase2 - rank_phase1)
+  
+# mutate(percent_phase1 = scales::percent(percent_phase1, accuracy = 0.01, scale = 1)) %>% 
+#   mutate(percent_phase2 = scales::percent(percent_phase2, accuracy = 0.01, scale = 1)) %>% 
+#   mutate(percent_total = scales::percent(percent_total, accuracy = 0.01, scale = 1)) %>% 
+#   mutate(value_phase1 = scales::dollar(value_phase1, prefix = "£")) %>% 
+#   mutate(value_phase2 = scales::dollar(value_phase2, prefix = "£")) %>% 
+#   mutate(value_total = scales::dollar(value_total, prefix = "£"))
 
 eatf_df_summary <- eatf_df %>% 
   filter(value_phase1 != "") %>% 
@@ -64,6 +85,66 @@ total_sums <- eatf_df_summary %>%
 Last 13<sup>th</sup> November the DfT annonunced the allocation of `r dollar(total_sums$Phase2, prefix = "£")`, corresponding to the second phase of the Emergency Active Travel Funds (EATF). While phase 1, allocated on May 2020 and accounting for `r dollar(total_sums$Phase1, prefix = "£")`, was aimed to support the installation of temporary projects for the COVID-19 pandemic, this second, more ambitious, one is aimed to support the creation of longer-term projects. Both allocation phases account for a total of `r dollar(total_sums$Total, prefix = "£")`, which is notably smaller (`r percent(total_sums$Total/250000000)`) than the [announced £250 million](https://www.gov.uk/government/news/2-billion-package-to-create-new-era-for-cycling-and-walking).
 
 In our aim to get an understanding about EATF, we have prepared a series of interactive visuals in order to contribute to better understand where the funds have been allocated. The following interactive table displays how much has been allocated in every region of England. Results can be searched and sorted by clicking on the header, making it easy to see how much has been spent in a specific region, and how does it stand compared to other regions and/or phases.
+
+```{r}
+table <- eatf_allocations %>% 
+  select(region, rank_phase1, percent_phase1, rank_phase2, percent_phase2, rank_total, percent_total, rank_variation) %>% 
+  mutate(percent_phase1 = percent_phase1/100) %>% 
+  mutate(percent_phase2 = percent_phase2/100) %>% 
+  mutate(percent_total = percent_total/100) %>% 
+  formattable() %>% 
+  as.datatable() 
+
+table <- table %>% 
+  # formatPercentage()formatCurrency(2:4, currency = "£ ") %>% 
+  formatPercentage(c(3,5,7))
+  
+table
+```
+
+
+```{r}
+table <- table <- eatf_allocations %>% 
+  select(region, rank_phase1, percent_phase1, rank_phase2, percent_phase2, rank_total, percent_total, rank_variation) %>% 
+  mutate(percent_phase1 = percent_phase1/100) %>% 
+  mutate(percent_phase2 = percent_phase2/100) %>% 
+  mutate(percent_total = percent_total/100) %>% 
+  formattable(align = c("l", rep("r", NCOL(eatf_allocations) - 1)),
+                     list(`percent_variation` = formatter("span", 
+                                           x ~ percent(x / 100),
+                                           style = x ~ style(color = ifelse(x < 0, "red", "green"))),
+                          `rank_variation` = formatter("span",
+                                           style = x ~ style(color = ifelse(x < 0, "red", "green"))))) 
+
+table <- as.datatable(table) %>% 
+    formatPercentage(c(3,5,7))
+
+table
+
+saveWidget(table, file="eatf-allocation-variance-table-embed.html")
+```
+```{r}
+
+rank_variation <- eatf_allocations %>% 
+  select(region, rank_phase1, rank_phase2, rank_total) %>% 
+  pivot_longer(!region, names_to = "phase", values_to = "value") %>% 
+  mutate(phase = gsub("rank_", "", phase))
+  
+p <- plot_ly(data = rank_variation) %>% 
+  add_trace(x = ~ phase,
+            y = ~ value,
+            type = "scatter",
+            mode = "lines+markers",
+            name = "Contagios confirmados diarios") %>% 
+  layout(title = "Rank evolution",
+         yaxis = list(title = "Rank"),
+         xaxis = list(title = "Phase"),
+         legend = list(x = 0.1, y = 0.9),
+         hovermode = "compare") 
+  
+p
+```
+
 
 ```{r echo=FALSE}
 table <- datatable(eatf_df_summary) %>% 
@@ -92,7 +173,7 @@ table
 # saveWidget(table, file="eatf-allocation-table-embed.html")
 ```
 
-```{r}
+```{r eval=FALSE, include=FALSE}
 df %>% 
   select(-group, -level) %>% 
   group_by(parent) %>% 
@@ -124,22 +205,24 @@ eatf_df_p1 <- eatf_df %>%
   count(parent, wt = value_phase1, sort = TRUE, name = "total") 
 
 eatf_df_p1 <- eatf_df %>% 
-  mutate(value_phase1 = replace(value_phase1, which(is.na(value_phase1)),0))
+ mutate(value_phase1 = replace(value_phase1, which(is.na(value_phase1)),0))
 
 # Now, areas are proportional to value.
 fig_fap1 <- plot_ly(
-  type="treemap",
-  branchvalues="total",
-  labels=eatf_df_p1$group,
-  parents=eatf_df_p1$parent,
-  values=eatf_df_p1$value_phase1,
-  textinfo="label+value+percent parent+percent entry",
+  type = "treemap",
+  # branchvalues = "total",
+  labels = eatf_df_p1$group,
+  parents = eatf_df_p1$parent,
+  values = eatf_df_p1$value_phase1,
   # hovertemplate="%{label}: %{value:$,s} <br>(%{percent})",
+  textinfo="label+value+percent parent+percent entry parent+percent root",
+  hoverinfo="parent+percent root"
+  
 )
 
 fig_fap1 <- fig_fap1 %>%
   layout(
-    title = "Emergency Active Travel Funds' Breadkown (Phase 1)",
+    title = "Emergency Active Travel Funds' Breakdown (Phase 1)",
     annotations =
       list(x = 1, y = -0.1, text = "Source: PEST, Data: Department of Transport",
            showarrow = F, xref='paper', yref='paper',
@@ -148,10 +231,12 @@ fig_fap1 <- fig_fap1 %>%
   )
 fig_fap1
 
+saveWidget(fig_fap1, file="EATF-breakdown-treemap-phase1.html")
+
 # Phase 2 -----------------------------------------------------------------
 
 eatf_df_p2 <- eatf_df %>%
-  count(parent, wt = value_phase1, sort = TRUE, name = "total") 
+  count(parent, wt = value_phase2, sort = TRUE, name = "total") 
 
 eatf_df_p2 <- eatf_df %>% 
   mutate(value_phase2 = replace(value_phase2, which(is.na(value_phase2)),0))
@@ -162,13 +247,13 @@ fig_fap2 <- plot_ly(
   labels=eatf_df_p2$group,
   parents=eatf_df_p2$parent,
   values=eatf_df_p2$value_phase2,
-  textinfo="label+value+percent parent+percent entry",
-  # hovertemplate="%{label}: %{value:$,s} <br>(%{percent})",
+  textinfo="label+value+percent parent+percent entry parent+percent root",
+  hoverinfo="parent+percent root"
 )
 
 fig_fap2 <- fig_fap2 %>%
   layout(
-    title = "Emergency Active Travel Funds' Breadkown (Phase 2)",
+    title = "Emergency Active Travel Funds' Breakdown (Phase 2)",
     annotations =
       list(x = 1, y = -0.1, text = "Source: PEST, Data: Department of Transport",
            showarrow = F, xref='paper', yref='paper',
@@ -176,6 +261,89 @@ fig_fap2 <- fig_fap2 %>%
            font=list(size=15, color="grey"))
   )
 fig_fap2
+
+saveWidget(fig_fap2, file="EATF-breakdown-treemap-phase2.html")
+
+# total -----------------------------------------------------------------
+
+eatf_df_total <- eatf_df %>% 
+ mutate(value_total = replace(value_total, which(is.na(value_total)),0))
+
+# Now, areas are proportional to value.
+fig_fap <- plot_ly(
+  type = "treemap",
+  # branchvalues = "total",
+  labels = eatf_df_total$group,
+  parents = eatf_df_total$parent,
+  values = eatf_df_total$value_total,
+  # hovertemplate="%{label}: %{value:$,s} <br>(%{percent})",
+  textinfo="label+value+percent parent+percent entry parent+percent root",
+  hoverinfo="parent+percent root"
+)
+
+fig_fap <- fig_fap %>%
+  layout(
+    title = "Emergency Active Travel Funds' Breakdown (Total)",
+    annotations =
+      list(x = 1, y = -0.1, text = "Source: PEST, Data: Department of Transport",
+           showarrow = F, xref='paper', yref='paper',
+           xanchor='right', yanchor='auto', xshift=0, yshift=0,
+           font=list(size=15, color="grey"))
+  )
+fig_fap
+
+# Total side by side:
+fig_fap_join <- plot_ly(
+  type = "treemap",
+  # branchvalues = "total",
+  labels = eatf_df_p1$group,
+  parents = eatf_df_p1$parent,
+  values = eatf_df_p1$value_phase1,
+  # hovertemplate="%{label}: %{value:$,s} <br>(%{percent})",
+  textinfo="label+value+percent parent+percent entry parent+percent root",
+  hoverinfo="parent+percent root",
+  domain=list(column=0),
+  name = "Phase 1"
+)
+
+fig_fap_join <- fig_fap_join %>% add_trace(
+  type="treemap",
+  labels=eatf_df_p2$group,
+  parents=eatf_df_p2$parent,
+  values=eatf_df_p2$value_phase2,
+  textinfo="label+value+percent parent+percent entry parent+percent root",
+  hoverinfo="parent+percent root",
+  domain=list(column=1),
+  name = "Phase 2"
+)
+
+fig_fap_join <- fig_fap_join %>% add_trace(
+  type = "treemap",
+  # branchvalues = "total",
+  labels = eatf_df_total$group,
+  parents = eatf_df_total$parent,
+  values = eatf_df_total$value_total,
+  # hovertemplate="%{label}: %{value:$,s} <br>(%{percent})",
+  textinfo="label+value+percent parent+percent entry parent+percent root",
+  hoverinfo="parent+percent root",
+  domain=list(column=2),
+  name = "Total"
+)
+
+fig_fap_join <- fig_fap_join %>% layout(
+  grid=list(columns=3, rows=1),
+  margin=list(l=0, r=0, b=0, t=30),
+  title = "Emergency Active Travel Funds' Breakdown (Phase 1, Phase 2, Total)",
+    annotations =
+      list(x = 1, y = -0.1, text = "Source: PEST, Data: Department of Transport",
+           showarrow = F, xref='paper', yref='paper',
+           xanchor='right', yanchor='auto', xshift=0, yshift=0,
+           font=list(size=15, color="grey")))
+
+fig_fap_join
+
+saveWidget(fig_fap_join, file="EATF-breakdown-treemap-total.html")
+
 ```
 
 <figure class="wide-child">
