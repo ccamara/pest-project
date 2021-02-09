@@ -63,6 +63,7 @@ However, if we focus on combined or local authorities, there can be seen slightl
   </figure>
 </div>
 
+Our next step will be to conduct a series of in-depth case studies for a selection of authority areas which will include site visits and interviews with key actors. We have selected Oxfordshire (where our institution is based) and the four case areas used for the [Understanding Walking and Cycling study](https://pest-project.org/publication/pooley-2011-understanding-waking-cycling/) (Lancashire, Leeds, Leicestershire and Worcestershire).
 
 [^data-source]: You can [check the data source here](https://docs.google.com/spreadsheets/d/e/2PACX-1vTYSfTrLj5TpExh8d-MTo9BaDb2L1Jc2Gg1E-uGolVkbenHa0z7-0JVITzhHFlZRo3YgDNP7bLOFv4j/pubhtml), which in turn is a copy of the [values provided by DfT](https://www.gov.uk/government/publications/emergency-active-travel-fund-local-transport-authority-allocations/emergency-active-travel-fund-total-indicative-allocations)
 [^Regions-UK]: Source: https://en.wikipedia.org/wiki/Subdivisions_of_England#Hierarchical_list_of_regions,_counties_and_districts
