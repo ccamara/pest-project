@@ -15,7 +15,7 @@ image:
   filename: featured
   focal_point: Smart
   preview_only: false
-  caption: "Rymers Lane, Florence Park, just before Low Traffic Neighbourhood was rolled out. Picture: David Fleming."
+  caption: "Works for Cowley LTN"
 ---
 
 The Oxfordshire Active Travel Fund (Tranche 2) is centered on five schemes: three in Oxford City and the remaining two in the freestanding rapidly expanding market towns of Bicester and Witney. The schemes have purportedly been identified during the development of the [Oxford Local Cycling and Walking Investment Plan (LCWIP)](https://mycouncil.oxfordshire.gov.uk/ieIssueDetails.aspx?IId=25575&PlanId=0) which was formally adopted by Council in March 2020 with [LCWIPs for Bicester](https://mycouncil.oxfordshire.gov.uk/ieDecisionDetails.aspx?AIId=21813) and [Witney](https://news.oxfordshire.gov.uk/cycling-bicester-and-witney) following later that year. The ambition of the ATF is to kick start the LCWIPs. Of course, the package of measures outlined in the Oxfordshire ATF has to be viewed in the context of county and city-wide measures to reduce traffic and encourage walking, cycling and public transport already being funded by the city and county councils. For example, two bus gates in the central area to complement existing bus gate on High Street are planned in tandem and will ultimately prevent all cross town private car traffic which will have to use the ring road instead. The phased roll-out of a zero-emission zone is also in progress.
