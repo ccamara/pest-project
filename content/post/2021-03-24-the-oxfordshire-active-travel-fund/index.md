@@ -5,9 +5,12 @@ draft: false
 featured: false
 authors:
   - tim-jones
+categories:
+  - Study Cases
 tags:
   - Oxfordshire
   - EATFTranche2
+  - Low Traffic Neighbourhoods
 projects:
   - Oxfordshire
 image:
