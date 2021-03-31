@@ -1,6 +1,6 @@
 ---
 title: "Low Traffic Neighbourhoods: new, old ways of managing 'traffic in towns'"
-subtitle: Despite their undeniable topicality, LTN are reinterpretating ideas dating from 70 years ago
+subtitle: Despite their undeniable topicality, LTN are reinterpreting ideas dating from 70 years ago
 date: 2021-04-09T09:06:15.503Z
 draft: false
 featured: false
