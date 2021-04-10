@@ -11,6 +11,7 @@ categories:
 tags:
   - Oxfordshire
   - Low Traffic Neighbourhoods
+  - Oxford
 projects:
   - Oxfordshire
 image:
