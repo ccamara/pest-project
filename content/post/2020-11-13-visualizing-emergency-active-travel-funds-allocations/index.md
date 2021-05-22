@@ -26,7 +26,7 @@ In order to understand the spread of (E)ATF allocations across England, we have 
 
 <div class="wide-child">
   <figure class="iframe-wrapper">
-    <embed src="/media/html_widgets/EATF-breakdown-datatable.html" style="min-height:600px;width:1050px;display:block;margin-left:auto;margin-right:auto;">
+    <embed src="/media/html_widgets/eatf-allocation-table-embed.html" style="min-height:600px;width:1050px;display:block;margin-left:auto;margin-right:auto;">
     <figcaption data-pre="Figure " data-post=":" class="numbered">
       Interactive Table with the EATF Allocation</br>Data: <a href="https://www.gov.uk/government/publications/emergency-active-travel-fund-local-transport-authority-allocations">Department of Transport.</a>
     </figcaption>
