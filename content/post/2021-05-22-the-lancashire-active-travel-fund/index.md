@@ -2,7 +2,7 @@
 title: The Lancashire Active Travel Fund
 subtitle: An overview about EATF schemes in Lancashire
 date: 2021-05-22T16:48:43.964Z
-draft: true
+draft: false
 featured: false
 authors:
   - carlos-camara
@@ -15,9 +15,11 @@ categories:
 projects:
   - Lancashire
 image:
+  placement: 2
   filename: featured
   focal_point: Smart
   preview_only: false
+  caption: Cycle lane in Lancashire. Source [Visitlancaster.com](https://www.visitlancashire.com/things-to-do/cycle-preston-and-south-ribble-p747530)
 ---
 Lancashire was awarded £2.8m for delivery of the second phase of its Active Travel Fund programme -an amount that puts the region in the 15th position in terms of budget allocation[^1]. Lancashire County Council (LCC) is using that budget to implement two permanent schemes: a Low Traffic Neighbourhood in Sandylands, and a super cycleway connecting Penwortham to Preston. These measures are part of the [County Council's strategy to promote walking and cycling](https://www.lancashire.gov.uk/roads-parking-and-travel/active-travel) for regular journeys, complemented with other temporary measures carried out in Lancaster, Preston and West Lancashire in accordance with the authority's [ten-year strategy for Cycling and Walking](https://www.lancashire.gov.uk/media/917305/6469-cycling-and-walking-strategy.pdf).
 
@@ -29,6 +31,10 @@ In addition to the deployment of the schemes, LCC is also delivering a [consulta
 
 A Low Traffic Neighbourhood will be implemented in Sandylands (Morecambe) through the implementation of modal filters. This area was chosen after a study that revealed it offered a combination of traffic-related issues with an ideal social and urban fabric.
 
+<div class="wide-child">
+  <iframe width="100%" height="600px" frameborder="0" allowfullscreen src="//umap.openstreetmap.fr/en/map/lancashire-atf_618873?scaleControl=true&miniMap=true&scrollWheelZoom=true&zoomControl=true&allowEdit=false&moreControl=true&searchControl=null&tilelayersControl=true&embedControl=null&datalayersControl=false&onLoadPanel=undefined&captionBar=false&measureControl=true&fullscreenControl=true"></iframe>
+</div>
+
 Sandylands is a residential area immediately behind Morecambe's seafront that encompasses primary and secondary schools, places of worship, local shops and communities. It is one of the most disadvantaged communities in Lancashire (approximately two-thirds of the area is in the 10% most deprived nationally). Traffic collisions are problematic in the area: 46 collisions were registered for the period between 2014 and 2018 in Sandylands and West End, resulting in a total of 70 casualties. According to LCC, "20% of these casualties were children. Of the collisions, 17 involved either a cyclist or a pedestrian, representing 37% of the total" ([LCC 2021a](https://www.lancashire.gov.uk/media/920993/scheme-2-sandylands-ltn-scheme-narrative.pdf)). 
 
 The expectation is that LTN will reduce the number of traffic incidents and improve the living conditions for residents. A consultation is planned for 2021 to get feedback and local insight from people who live and work in the area.
@@ -36,6 +42,10 @@ The expectation is that LTN will reduce the number of traffic incidents and impr
 ### Penwortham to Preston Cycle Superhighway
 
 As part of (Emergency) Active Travel Fund Phase 1, a popup cycle lane was deployed in Penwortham's Liverpool Road ([see map](https://www.lancashire.gov.uk/media/919626/ventbrook-tm-liverpool-road-penwortham.pdf)), following DfTs National Propensity to Cycle Tool ([reports](https://www.gov.uk/government/publications/national-propensity-to-cycle-first-phase-development-study), [web app](https://www.pct.bike)) results showing great potential for bike adoption in that area. Due to its success, LCC will be consolidating and extending it through the creation of a key strategic corridor (the "Cycle Superhighway") connecting the town of Penwortham with Preston City centre, Preston main line railway station and the University of Central Lancashire.
+
+<div class="wide-child">
+  <iframe width="100%" height="600px" frameborder="0" allowfullscreen src="//umap.openstreetmap.fr/ca/map/clon-de-lancashire-atf_618894?scaleControl=true&miniMap=true&scrollWheelZoom=true&zoomControl=true&allowEdit=false&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=undefined&captionBar=false"></iframe>
+</div>
 
 LCC expectations are that the Cycle Superhighway will present "a real opportunity to deliver a step change in provision for pedestrians and cyclists along this desired line corridor connecting residents with local facilities, education sites and the city centre, helping to realise significant potential to encourage increased walking and cycling journeys along this route. Increased active travel journeys can not only reduce the number of cars on our roads, reducing congestion and improving air quality, but also provides health and wellbeing benefits." ([LCC, 2021b](https://www.lancashire.gov.uk/media/920991/scheme-1-penwortham-to-preston-cycle-superhighway-scheme-narrative.pdf))
 
